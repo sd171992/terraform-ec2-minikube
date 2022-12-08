@@ -24,7 +24,7 @@ resource "aws_instance" "myec2" {
       type        = "ssh"
       host        = self.public_ip
       user        = "ubuntu"
-      private_key = file("./MyNewKey.pem")
+      private_key = file("./K8Scluster.pem")
     }
   }
 }
